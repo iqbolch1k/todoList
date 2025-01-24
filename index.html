@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>to-list</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            padding-top: 20px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .todo-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        .header{
+            text-align: center;
+        }
+        .header h1{
+            font-size: 45px;
+        }
+        .header p{
+            font-size: 20px;
+        }
+        .main h2{
+            font-size: 30px;
+            padding: 10px 0px;
+            text-align: center;
+        }
+        .main .input {
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;  
+            border-radius:20px;
+        }
+        .main .input input{
+            padding: 0px 8px;
+            height: 40px;
+            width: 400px;
+            border: none;
+            border-radius: 20px;
+        }
+        .main .input input:focus{
+            outline: none;
+        }
+        .main .input button{
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            font-size: 30px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+        .ul ul{
+            margin-top: 20px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ul ul li{
+            width: 100%;
+            height: 45px;
+            border: 1px solid grey;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 15px;
+            color: #000000;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .ul-icon{
+            display: flex;
+            gap: 10px;
+            font-size: 20px;
+        }
+        .ul ul li del{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-card">
+        <div class="header">
+            <h1>23:50:40</h1>
+            <p>Payshanba,23-yanvar</p>
+        </div>
+        <div class="main">
+            <h2>TodoList</h2>
+            <div class="input"><input type="text" id="input"><button id="btn">+</button></div>
+            <div class="ul">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
